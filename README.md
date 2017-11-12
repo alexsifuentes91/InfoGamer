@@ -1,3 +1,3 @@
 # InfoGamer
 
-Personal videogame project
+Personal videogame project: using
