@@ -1,1 +1,3 @@
 # InfoGamer
+
+Personal videogame project
