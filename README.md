@@ -1,3 +1,3 @@
 # InfoGamer
 
-Personal videogame project: using
+Personal videogame project: using technologies
