@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  	<modelVersion>4.0.0</modelVersion>
+  
+  	<artifactId>infogamer-services</artifactId>
+  	<packaging>jar</packaging>
+  	<!-- java archive instead of web archive (usually use this for web app) -->
+  
+  	<!-- Inherit from infogamer-parent to run services and ui together -->
+  	<parent>
+    	<groupId>com.ixelioz.personalproject</groupId>
+    	<artifactId>infogamer-parent</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+  	</parent>
+  	
+  	<!-- Versions and variables for dependencies for easier management -->
+  	<properties>
+  		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  		<java.version>1.8</java.version>
+  		<springfox.version>2.2.2</springfox.version>
+  		<micrometer.version>1.0.3</micrometer.version>
+  	</properties>
+  	
+  	<!-- Dependencies for project to use -->
+  	<dependencies>
+  		
+  		<!-- Starter to develop web applications always use -->
+  		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-web</artifactId>
+  		</dependency>
+  		
+  		<!-- Used to develop tests for web applications -->
+  		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-test</artifactId>
+  		</dependency>
+  		
+  		<!-- Used to map to DB for web applications -->
+  		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-jdbc</artifactId>
+  		</dependency>
+  		
+  		<!-- Used to get metrics for web applications -->
+  		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-actuator</artifactId>
+  		</dependency>
+  		
+  		<!-- Used to map to DB for web applications -->
+  		<dependency>
+  			<groupId>oracle.jdbc</groupId>
+  			<artifactId>ojdbc6</artifactId>
+  			<version>11.1.0.7.0</version>
+  		</dependency>
+  		
+  		<!-- javax cache -->
+  		<dependency>
+  			<groupId>javax.cache</groupId>
+  			<artifactId>cache-api</artifactId>
+  		</dependency>
+  		
+  		<!-- springfox -->
+  		<dependency>
+  			<groupId>io.springfox</groupId>
+  			<artifactId>springfox-swagger-ui</artifactId>
+  			<version>${springfox.version}</version>
+  		</dependency>
+  		
+  	</dependencies>
+  
+</project>
