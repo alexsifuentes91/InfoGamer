@@ -1,0 +1,4 @@
+#https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+#server
+server.contextPath=/infogamer-services
+server.port=9020

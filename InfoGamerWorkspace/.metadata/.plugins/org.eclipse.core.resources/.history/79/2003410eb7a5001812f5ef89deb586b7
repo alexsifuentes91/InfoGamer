@@ -1,0 +1,3 @@
+#server
+server.contextPath=/infogamer-services
+server.port=9020

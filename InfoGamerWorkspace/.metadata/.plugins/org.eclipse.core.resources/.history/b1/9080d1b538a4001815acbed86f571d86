@@ -1,0 +1,10 @@
+package com.ixelioz.personalproject.infogamer;
+
+public class InfogamerApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

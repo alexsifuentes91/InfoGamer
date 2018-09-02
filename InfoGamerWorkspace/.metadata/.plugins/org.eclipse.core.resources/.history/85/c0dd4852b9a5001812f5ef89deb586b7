@@ -1,0 +1,15 @@
+#https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+#server
+server.contextPath=/infogamer-services
+server.port=9020
+
+#database
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=####)))
+spring.datasource.username=alexsif
+spring.datasource.password=Sonicblue91
+
+spring.datasource.max-active=10
+spring.datasource.initial-size=3
+spring.datasource.remove-abandoned=true
+spring.datasource.log-abandoned=true

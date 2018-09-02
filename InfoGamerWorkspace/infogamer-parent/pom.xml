@@ -13,14 +13,19 @@
   	<!-- groudId is the name I give it when creating project -->
   	<groupId>com.ixelioz.personalproject</groupId>
   	<artifactId>infogamer-parent</artifactId>
-  	<version>0.0.1-SNAPSHOT</version>
   	<packaging>pom</packaging>
+  	<version>0.0.1-SNAPSHOT</version>
   	
-  	<!-- The different modules or parts that make up the project whole -->
-  	<modules>
-  		<module>infogamer-services</module>
-  		<module>infogamer-ui</module>
-  	</modules>
+  	<!-- The different modules or parts that make up the project whole and the default activated profile, otherwise have to specify in the mvn clean install command which profile to run -->
+  	<profiles>
+  		<profile>
+  			<modules>
+  				<module>infogamer-services</module>
+  				<!-- <module>infogamer-ui</module> -->
+  			</modules>
+  		</profile>
+  	</profiles>
+  	
   	
   	<!-- Transitive dependencies are dependencies of a framework or dependency you are directly using 
   	example: log4j is a transitive dependency for Spring framework, since you dont use it directly-->

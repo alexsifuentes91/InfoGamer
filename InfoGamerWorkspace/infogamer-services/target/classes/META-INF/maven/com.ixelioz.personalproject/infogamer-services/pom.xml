@@ -68,11 +68,12 @@
   		</dependency> -->
   		
   		<!-- Used to map to DB for web applications -->
-  		<dependency> <!-- need to manually download it from oracle -->
+  		<!-- need to manually download it from oracle -->
+  		<!--  <dependency> 
   			<groupId>com.oracle.jdbc</groupId>
   			<artifactId>ojdbc6</artifactId>
   			<version>11.1.0.7.0</version>
-  		</dependency>
+  		</dependency> -->
   		
   		<!-- javax cache -->
   		<dependency>
@@ -104,7 +105,7 @@
   		<dependency>
   			<groupId>org.springframework</groupId>
   			<artifactId>spring-jms</artifactId>
-  			<version>4.3.18.RELEASE</version> <!-- no-mvn-man-ver -->
+  			<version>4.3.7.RELEASE</version> <!-- no-mvn-man-ver -->
   		</dependency>
   		
   		<!-- janino -->

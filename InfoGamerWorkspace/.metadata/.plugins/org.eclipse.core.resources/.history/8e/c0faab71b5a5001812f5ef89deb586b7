@@ -1,0 +1,58 @@
+package com.ixelioz.personalproject.infogamer;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
+//import org.springframework.boot.builder.SpringApplicationBuilder;
+//import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
+
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+//import javax.servlet.Filter;
+
+@SpringBootApplication //initializes spring (component scan) and springboot(auto configuration)
+@EnableSwagger2
+public class InfogamerApplication 
+{
+//	@Value("${application.name}")
+	private String applicationName = "infogamer";
+//	@Value("${build.version}")
+	private String buildVersion = "1";
+
+	private static final Logger infogamerLogger = LoggerFactory.getLogger(InfogamerApplication.class);
+	
+	public static void main(String[] args) 
+	{
+		infogamerLogger.debug("Launching Info Gamer Service. ");
+		SpringApplication.run(InfogamerApplication.class, args);
+	}
+	
+//	@Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder application)
+//	{
+//		return application.sources(InfogamerApplication.class, args);
+//	}
+	
+//	@Bean
+//	public Docket api()
+//	{
+//		String title = applicationName + " Api Documentation";
+//		String version = buildVersion;
+//		
+//		return new Docket(DocumentationType.SWAGGER_2)
+//				.select()
+//				.apis(RequestHandlerSelectors.any())
+//				.paths(PathSelectors.any())
+//				.build().apiInfo(new ApiInfo(title, title, version, "","","",""));
+//	}
+
+}
